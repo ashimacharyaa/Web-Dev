@@ -1,0 +1,17 @@
+
+.card {
+    width: 50%; 
+    border: 1px solid #15e731;
+    padding: 16px;
+}
+
+.card h2 {
+    font-weight: bold; 
+    color: rgb(42, 165, 52);      
+    margin-bottom: 48px;
+}
+
+.card img {
+    width: 100%; 
+    height: auto;
+}
