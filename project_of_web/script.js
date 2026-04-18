@@ -28,7 +28,7 @@ if(canvas) {
     });
 
     function draw() {
-        ctx.fillStyle = "black";
+        ctx.fillStyle = "yellow";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         for(let i = 0; i < snake.length; i++) {

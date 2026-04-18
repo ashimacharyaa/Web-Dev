@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e0f5d8ecce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.jpg" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-text">
+            <p>Football Player, Web Developer</p>
+            <h1>Hello, I am Ashim <span><br> From Nepal.</span></h1>
+        </div>
+
+    </div>
+</div>
+<!--------about------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+            <img src="aboutimg.jpg">
+        </div>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p> Ashim Acharya is a dedicated and curious student with a strong interest in technology, cybersecurity, and networking.
+                He actively engages in learning, asks thoughtful questions, and works seriously on assignments. He also plans ahead for future 
+                responsibilities, showing a balanced approach toward academics, practical skills, and personal development.</p>
+                <div class="tab-titles">
+                <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                <div class="tab-links" onclick="opentab('experience')">Experience</div>
+                <div class="tab-links" onclick="opentab('education')">Education</div>
+                </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Data Scientist</span><br>Analyzing large dataset and making decisions.</li>
+                    <li><span>UI/UX</span><br>Designing websites and web-app interface.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2021-Present</span><br>Stock Analyst, Professional Investor.</li>
+                    <li><span>2026-Present</span><br>Freelancer.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>+2</span><br>Kathmandu Bernhardt(3.78 GPA).</li>
+                    <li><span>Bachelors</span><br>Kings College(3.91 GPA).</li>
+                </ul>
+            </div>
+            </div> 
+        </div> 
+    </div> 
+</div>
+
+<!------- services---->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-web-awesome"></i>
+                <h2>Web Design</h2>
+                <p>I work in web design by creating visually appealing and responsive websites that provide a good user experience. I use technologies 
+                    like HTML, CSS, and JavaScript to design layouts, structure pages, and add interactivity. My focus is on making websites mobile-friendly, 
+                    fast, and easy to navigate. I also ensure proper UI/UX principles are followed so users can interact smoothly with the website. 
+                    I design pages that are both functional and attractive to meet user and business needs effectively.</p>
+                    <a href="#"Learn More></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>MySQL Database</h2>
+                <p>I work with MySQL to manage and organize data for web applications. My role includes creating databases, designing tables, 
+                    and writing SQL queries to insert, update, delete, and retrieve data efficiently. I ensure data is stored securely and 
+                    structured properly for smooth website functionality. MySQL helps in handling user information, login systems, and dynamic
+                     content. I also optimize queries for better performance and maintain data integrity so that the website and database work 
+                     together reliably and efficiently.</p>
+                    <a href="#"Learn More></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-----Portfolio------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="robot.jpg">
+                <div class="layer">
+                    <h3>Obstacle Avoiding Robot</h3>
+                    <p>Autonomous navigation using Arduino and ultrasonic sensors.</p>
+                </div>
+            </div>
+            <div class="work">
+                <img src="datascience.webp">
+                <div class="layer">
+                    <h3>Banking Data Science</h3>
+                    <p>Financial analysis and loan management using SQL and Python.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----Contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-at"></i> acharyaashim13@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 9840254735</p>
+
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/ashimacharya/"><i class="fa-brands fa-linkedin"></i> </a>
+          <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i> </a>
+        </div>
+        <a href="my_resume.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!--clock code-->
+    <div class="clock-container">
+        <div>Nepal Time: <span id="nepal-time" class="time-val"></span></div>
+        <div>Your Time: <span id="local-time" class="time-val"></span></div>
+    </div>
+
+  <div class="copyright">
+    <p>Copyright © Ashim, 2026</p>
+  </div>
+</div>
+       
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
