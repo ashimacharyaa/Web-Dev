@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Ashim Acharya</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="about.html">About me</a>
+            <a href="contact.html">Contact me</a>
+        </div>
+    </nav>
+   
+    <section style="padding: 60px 20px; text-align: center;">
+    <h2>Get In Touch</h2>
+    <p>Send me a message or book a time on my calendar below to contact me.</p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; margin-top: 40px;">
+        
+   <form action="https://api.sheetmonkey.io/form/kgwXDPuL4ySRXFmXRHYG8B" method="POST" style="max-width: 500px; margin: 40px auto; display: flex; flex-direction: column; gap: 15px;">
+    
+    <input type="text" name="Name" placeholder="Your Name" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc;">
+    
+    <input type="email" name="Email" placeholder="Your Email" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc;">
+    
+    <textarea name="Message" placeholder="Your Message" rows="5" required style="padding: 12px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+
+    <input type="hidden" name="x-sheetmonkey-redirect" value="x-sheetmonkey-current-date-time" />
+
+    <button type="submit" class="btn" style="background: #2196F3; color: white; border: none; padding: 15px; cursor: pointer; border-radius: 25px; font-weight: bold;">SEND MESSAGE</button>
+</form>
+
+        <div style="flex: 1; min-width: 320px; height: 600px;">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/ashimacharyaa08/30min" style="min-width:320px;height:630px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            </div>
+
+    </div>
+</section>
+
+    <div class="clock-container">
+        <div>Nepal (NPT): <span id="nepal-time" class="time-val"></span></div>
+        <div>Your Time: <span id="local-time" class="time-val"></span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

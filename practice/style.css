@@ -1,0 +1,8 @@
+.box {
+  transition: background-color 300ms;
+}
+
+.box:hover {
+  background-color: lightblue;
+  color: black;
+}
